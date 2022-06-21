@@ -19,6 +19,7 @@ class TextLearnView extends StatelessWidget {
               style: const TextStyle(
                 color: Colors.red,
                 decoration: TextDecoration.lineThrough,
+                backgroundColor: Colors.amber,
                 fontSize: 24,
                 letterSpacing: 2,
               ),
@@ -30,7 +31,7 @@ class TextLearnView extends StatelessWidget {
               style: Theme.of(context)
                   .textTheme
                   .headline3
-                  ?.copyWith(color: Colors.black),
+                  ?.copyWith(color: Colors.black, fontSize: 40),
             ),
             Text(
               ('${userName ?? ''} Everbody Wants to me my enemy' * 10),
